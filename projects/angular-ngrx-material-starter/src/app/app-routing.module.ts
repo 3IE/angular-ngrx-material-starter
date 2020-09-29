@@ -8,18 +8,6 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
-    path: 'about',
-    loadChildren: () =>
-      import('./features/about/about.module').then((m) => m.AboutModule)
-  },
-  {
-    path: 'settings',
-    loadChildren: () =>
-      import('./features/settings/settings.module').then(
-        (m) => m.SettingsModule
-      )
-  },
-  {
     path: '**',
     redirectTo: 'about'
   }
