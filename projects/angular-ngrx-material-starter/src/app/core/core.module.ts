@@ -18,12 +18,10 @@ import {
   FaIconLibrary,
   FontAwesomeModule
 } from '@fortawesome/angular-fontawesome';
-
 import { FormsModule } from '@angular/forms';
-import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 import { environment } from '../../environments/environment';
-
+import {MatSnackBarModule} from '@angular/material/snack-bar';
 import {
   AppState,
   reducers,
@@ -69,6 +67,7 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 
 import { ModalService } from './modals.service';
+import { from } from 'rxjs';
 
 export {
   TitleService,
