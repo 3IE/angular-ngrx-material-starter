@@ -8,6 +8,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app/app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ConfirmComponent } from './modals/confirm/confirm.component';
+import { TestComponent } from './components/test/test.component';
 
 @NgModule({
   imports: [
@@ -23,7 +24,11 @@ import { ConfirmComponent } from './modals/confirm/confirm.component';
 
     NgbModule
   ],
-  declarations: [AppComponent, ConfirmComponent],
+  declarations: [
+    AppComponent,
+    ConfirmComponent,
+    TestComponent
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

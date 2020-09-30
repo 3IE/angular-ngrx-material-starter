@@ -1,15 +1,15 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule, PreloadAllModules } from '@angular/router';
+import { TestComponent } from './components/test/test.component';
 
 const routes: Routes = [
   {
-    path: '',
-    redirectTo: 'about',
-    pathMatch: 'full'
+    path: 'test',
+    component: TestComponent
   },
   {
     path: '**',
-    redirectTo: 'about'
+    redirectTo: 'test'
   }
 ];
 
