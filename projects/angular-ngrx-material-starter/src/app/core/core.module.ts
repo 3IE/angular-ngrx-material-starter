@@ -75,6 +75,8 @@ import {
   faYoutube
 } from '@fortawesome/free-brands-svg-icons';
 
+import { ModalService } from './modals.service';
+
 export {
   TitleService,
   selectAuth,
@@ -148,7 +150,8 @@ export function HttpLoaderFactory(http: HttpClient) {
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: HttpErrorInterceptor, multi: true },
     { provide: ErrorHandler, useClass: AppErrorHandler },
-    { provide: RouterStateSerializer, useClass: CustomSerializer }
+    { provide: RouterStateSerializer, useClass: CustomSerializer },
+    ModalService
   ],
   exports: [
     // angular
