@@ -10,7 +10,6 @@ import {
   selectSettingsLanguage,
   selectSettingsStickyHeader
 } from '../core/core.module';
-import { SharedModule } from '../shared/shared.module';
 
 import { AppComponent } from './app.component';
 
@@ -20,7 +19,6 @@ describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       imports: [
-        SharedModule,
         RouterTestingModule,
         NoopAnimationsModule,
         TranslateModule.forRoot()
