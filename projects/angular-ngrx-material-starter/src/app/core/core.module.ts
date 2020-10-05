@@ -18,18 +18,10 @@ import {
   FaIconLibrary,
   FontAwesomeModule
 } from '@fortawesome/angular-fontawesome';
-import { MatSidenavModule } from '@angular/material/sidenav';
-import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatListModule } from '@angular/material/list';
-import { MatMenuModule } from '@angular/material/menu';
-import { MatIconModule } from '@angular/material/icon';
-import { MatSelectModule } from '@angular/material/select';
-import { MatTooltipModule } from '@angular/material/tooltip';
 import { FormsModule } from '@angular/forms';
-import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 import { environment } from '../../environments/environment';
-
+import {MatSnackBarModule} from '@angular/material/snack-bar';
 import {
   AppState,
   reducers,
@@ -58,7 +50,6 @@ import {
   selectEffectiveTheme,
   selectSettingsStickyHeader
 } from './settings/settings.selectors';
-import { MatButtonModule } from '@angular/material/button';
 import {
   faCog,
   faBars,
@@ -74,6 +65,9 @@ import {
   faInstagram,
   faYoutube
 } from '@fortawesome/free-brands-svg-icons';
+
+import { ModalService } from './modals.service';
+import { from } from 'rxjs';
 
 export {
   TitleService,
@@ -110,15 +104,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     FormsModule,
 
     // material
-    MatSidenavModule,
-    MatToolbarModule,
-    MatListModule,
-    MatMenuModule,
-    MatIconModule,
-    MatSelectModule,
-    MatTooltipModule,
     MatSnackBarModule,
-    MatButtonModule,
+    
 
     // ngrx
     StoreModule.forRoot(reducers, { metaReducers }),
@@ -148,22 +135,15 @@ export function HttpLoaderFactory(http: HttpClient) {
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: HttpErrorInterceptor, multi: true },
     { provide: ErrorHandler, useClass: AppErrorHandler },
-    { provide: RouterStateSerializer, useClass: CustomSerializer }
+    { provide: RouterStateSerializer, useClass: CustomSerializer },
+    ModalService
   ],
   exports: [
     // angular
     FormsModule,
 
     // material
-    MatSidenavModule,
-    MatToolbarModule,
-    MatListModule,
-    MatMenuModule,
-    MatIconModule,
-    MatSelectModule,
-    MatTooltipModule,
     MatSnackBarModule,
-    MatButtonModule,
 
     // 3rd party
     FontAwesomeModule,
