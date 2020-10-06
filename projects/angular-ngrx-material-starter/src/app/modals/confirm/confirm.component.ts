@@ -1,4 +1,9 @@
-import { Component, OnInit, ChangeDetectionStrategy, Input } from '@angular/core';
+import {
+  Component,
+  OnInit,
+  ChangeDetectionStrategy,
+  Input
+} from '@angular/core';
 import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
@@ -8,7 +13,6 @@ import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ConfirmComponent {
-
   @Input() public title: string;
   @Input() public message: string;
 
@@ -25,5 +29,4 @@ export class ConfirmComponent {
   public send(): void {
     this.activeModal.close(true);
   }
-
 }

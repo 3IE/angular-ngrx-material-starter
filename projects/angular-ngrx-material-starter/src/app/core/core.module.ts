@@ -107,7 +107,6 @@ export function HttpLoaderFactory(http: HttpClient) {
     MatSnackBarModule,
     NgbModule,
 
-
     // ngrx
     StoreModule.forRoot(reducers, { metaReducers }),
     StoreRouterConnectingModule.forRoot(),
@@ -136,7 +135,7 @@ export function HttpLoaderFactory(http: HttpClient) {
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: HttpErrorInterceptor, multi: true },
     { provide: ErrorHandler, useClass: AppErrorHandler },
-    { provide: RouterStateSerializer, useClass: CustomSerializer },
+    { provide: RouterStateSerializer, useClass: CustomSerializer }
   ],
   exports: [
     // angular

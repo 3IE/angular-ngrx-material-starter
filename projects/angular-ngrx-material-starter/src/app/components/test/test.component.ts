@@ -7,7 +7,6 @@ import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class TestComponent implements OnInit {
-
   constructor() {
     //
   }
@@ -15,5 +14,4 @@ export class TestComponent implements OnInit {
   ngOnInit(): void {
     //
   }
-
 }

@@ -19,13 +19,9 @@ import { TestComponent } from './components/test/test.component';
     CoreModule,
 
     // app
-    AppRoutingModule,
+    AppRoutingModule
   ],
-  declarations: [
-    AppComponent,
-    ConfirmComponent,
-    TestComponent
-  ],
+  declarations: [AppComponent, ConfirmComponent, TestComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

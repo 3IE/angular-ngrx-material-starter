@@ -5,13 +5,8 @@ import { Observable } from 'rxjs';
 
 import { environment as env } from '../../environments/environment';
 
-import {
-  routeAnimations,
-  LocalStorageService,
-} from '../core/core.module';
-import {
-  actionSettingsChangeAnimationsPageDisabled,
-} from '../core/settings/settings.actions';
+import { routeAnimations, LocalStorageService } from '../core/core.module';
+import { actionSettingsChangeAnimationsPageDisabled } from '../core/settings/settings.actions';
 import { ModalService } from '../core/modal/modal.service';
 
 @Component({
@@ -29,7 +24,7 @@ export class AppComponent implements OnInit {
 
   constructor(
     private store: Store,
-    private storageService: LocalStorageService,
+    private storageService: LocalStorageService
   ) {}
 
   private static isIEorEdgeOrSafari() {
