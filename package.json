@@ -24,7 +24,8 @@
     "contributors:check": "all-contributors check",
     "new-da": "node scripts/new-da.js",
     "new-page": "node scripts/new-page.js",
-    "new-pipe": "node scripts/new-pipe.js"
+    "new-pipe": "node scripts/new-pipe.js",
+    "new-service": "node scripts/new-service.js"
   },
   "husky": {
     "hooks": {
