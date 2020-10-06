@@ -23,7 +23,8 @@
     "contributors:generate": "all-contributors generate && node .all-contributors-html.js",
     "contributors:check": "all-contributors check",
     "new-da": "node scripts/new-da.js",
-    "new-page": "node scripts/new-page.js"
+    "new-page": "node scripts/new-page.js",
+    "new-pipe": "node scripts/new-pipe.js"
   },
   "husky": {
     "hooks": {
