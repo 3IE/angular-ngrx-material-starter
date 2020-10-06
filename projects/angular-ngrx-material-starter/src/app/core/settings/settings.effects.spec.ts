@@ -38,7 +38,9 @@ describe('SettingsEffects', () => {
         snapshot: {}
       },
       events: {
-        pipe() {}
+        pipe() {
+          //
+        }
       }
     };
     localStorageService = jasmine.createSpyObj('LocalStorageService', [

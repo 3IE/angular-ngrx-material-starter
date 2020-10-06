@@ -5,15 +5,9 @@ import { Observable } from 'rxjs';
 
 import { environment as env } from '../../environments/environment';
 
-import {
-  routeAnimations,
-  LocalStorageService,
-} from '../core/core.module';
-import {
-  actionSettingsChangeAnimationsPageDisabled,
-} from '../core/settings/settings.actions';
-import { ModalService } from '../core/modals.service';
-import { ConfirmComponent } from '../modals/confirm/confirm.component';
+import { routeAnimations, LocalStorageService } from '../core/core.module';
+import { actionSettingsChangeAnimationsPageDisabled } from '../core/settings/settings.actions';
+import { ModalService } from '../core/modal/modal.service';
 
 @Component({
   selector: 'anms-root',
@@ -30,8 +24,7 @@ export class AppComponent implements OnInit {
 
   constructor(
     private store: Store,
-    private storageService: LocalStorageService,
-    private modalService: ModalService
+    private storageService: LocalStorageService
   ) {}
 
   private static isIEorEdgeOrSafari() {
