@@ -21,7 +21,7 @@ import {
 import { FormsModule } from '@angular/forms';
 
 import { environment } from '../../environments/environment';
-import {MatSnackBarModule} from '@angular/material/snack-bar';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 import {
   AppState,
   reducers,

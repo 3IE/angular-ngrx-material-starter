@@ -11,7 +11,7 @@ const scheduler = new TestScheduler((actual, expected) =>
 
 describe('GoogleAnalyticsEffects', () => {
   let router: any;
-  const ga = (<any>window).ga;
+  const ga = (window as any).ga;
 
   beforeEach(() => {
     router = {
@@ -19,15 +19,17 @@ describe('GoogleAnalyticsEffects', () => {
         snapshot: {}
       },
       events: {
-        pipe() {}
+        pipe() {
+          //
+        }
       }
     };
 
-    (<any>window).ga = jasmine.createSpy('ga');
+    (window as any).ga = jasmine.createSpy('ga');
   });
 
   afterAll(() => {
-    (<any>window).ga = ga;
+    (window as any).ga = ga;
   });
 
   it('should not dispatch action', function () {
@@ -46,13 +48,13 @@ describe('GoogleAnalyticsEffects', () => {
       const effect = new GoogleAnalyticsEffects(router);
 
       effect.pageView().subscribe(() => {
-        expect((<any>window).ga).toHaveBeenCalled();
-        expect((<any>window).ga).toHaveBeenCalledWith(
+        expect((window as any).ga).toHaveBeenCalled();
+        expect((window as any).ga).toHaveBeenCalledWith(
           'set',
           'page',
           routerEvent.urlAfterRedirects
         );
-        expect((<any>window).ga).toHaveBeenCalledWith('send', 'pageview');
+        expect((window as any).ga).toHaveBeenCalledWith('send', 'pageview');
       });
     });
   });

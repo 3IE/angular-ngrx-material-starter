@@ -6,7 +6,9 @@ const APP_PREFIX = 'ANMS-';
   providedIn: 'root'
 })
 export class LocalStorageService {
-  constructor() {}
+  constructor() {
+    //
+  }
 
   static loadInitialState() {
     return Object.keys(localStorage).reduce((state: any, storageKey) => {

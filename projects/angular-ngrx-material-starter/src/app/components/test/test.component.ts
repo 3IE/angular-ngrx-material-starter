@@ -8,9 +8,12 @@ import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 })
 export class TestComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+    //
+  }
 
   ngOnInit(): void {
+    //
   }
 
 }
