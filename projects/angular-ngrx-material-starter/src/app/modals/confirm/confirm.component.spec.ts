@@ -11,10 +11,7 @@ describe('ConfirmComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [ConfirmComponent],
-      providers: [
-        provideMockStore(),
-        NgbActiveModal
-      ]
+      providers: [provideMockStore(), NgbActiveModal]
     }).compileComponents();
   }));
 

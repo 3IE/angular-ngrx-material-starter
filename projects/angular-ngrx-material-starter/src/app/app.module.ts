@@ -7,7 +7,7 @@ import { CoreModule } from './core/core.module';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app/app.component';
 import { ConfirmComponent } from './modals/confirm/confirm.component';
-import { TestComponent } from './components/test/test.component';
+import { HomeComponent } from './pages/home/home.component';
 
 @NgModule({
   imports: [
@@ -21,7 +21,7 @@ import { TestComponent } from './components/test/test.component';
     // app
     AppRoutingModule
   ],
-  declarations: [AppComponent, ConfirmComponent, TestComponent],
+  declarations: [AppComponent, ConfirmComponent, HomeComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
