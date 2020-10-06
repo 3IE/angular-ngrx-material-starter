@@ -6,7 +6,6 @@ import { CoreModule } from './core/core.module';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app/app.component';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ConfirmComponent } from './modals/confirm/confirm.component';
 import { TestComponent } from './components/test/test.component';
 
@@ -21,8 +20,6 @@ import { TestComponent } from './components/test/test.component';
 
     // app
     AppRoutingModule,
-
-    NgbModule
   ],
   declarations: [
     AppComponent,

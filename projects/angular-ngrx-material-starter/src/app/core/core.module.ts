@@ -66,8 +66,8 @@ import {
   faYoutube
 } from '@fortawesome/free-brands-svg-icons';
 
-import { ModalService } from './modals.service';
 import { from } from 'rxjs';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 export {
   TitleService,
@@ -105,7 +105,8 @@ export function HttpLoaderFactory(http: HttpClient) {
 
     // material
     MatSnackBarModule,
-    
+    NgbModule,
+
 
     // ngrx
     StoreModule.forRoot(reducers, { metaReducers }),
@@ -136,7 +137,6 @@ export function HttpLoaderFactory(http: HttpClient) {
     { provide: HTTP_INTERCEPTORS, useClass: HttpErrorInterceptor, multi: true },
     { provide: ErrorHandler, useClass: AppErrorHandler },
     { provide: RouterStateSerializer, useClass: CustomSerializer },
-    ModalService
   ],
   exports: [
     // angular

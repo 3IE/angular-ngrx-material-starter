@@ -1,10 +1,12 @@
-import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { Injectable } from '@angular/core';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
-@Injectable()
-export class ModalService {
+@Injectable({
+  providedIn: 'root'
+})
+export class ModalsService {
 
-    private ngbModal: NgbModal;
+  private ngbModal: NgbModal;
 
     constructor(
         ngbModal: NgbModal

@@ -12,8 +12,7 @@ import {
 import {
   actionSettingsChangeAnimationsPageDisabled,
 } from '../core/settings/settings.actions';
-import { ModalService } from '../core/modals.service';
-import { ConfirmComponent } from '../modals/confirm/confirm.component';
+import { ModalService } from '../core/modal/modal.service';
 
 @Component({
   selector: 'anms-root',
@@ -31,7 +30,6 @@ export class AppComponent implements OnInit {
   constructor(
     private store: Store,
     private storageService: LocalStorageService,
-    private modalService: ModalService
   ) {}
 
   private static isIEorEdgeOrSafari() {
