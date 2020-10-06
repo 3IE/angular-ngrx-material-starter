@@ -25,7 +25,8 @@
     "new-da": "node scripts/new-da.js",
     "new-page": "node scripts/new-page.js",
     "new-pipe": "node scripts/new-pipe.js",
-    "new-service": "node scripts/new-service.js"
+    "new-service": "node scripts/new-service.js",
+    "new-component": "node scripts/new-component.js"
   },
   "husky": {
     "hooks": {
