@@ -68,7 +68,7 @@
                 {
                   "type": "bundle",
                   "name": "main",
-                  "baseline": "1024kb",
+                  "baseline": "4096kb",
                   "maximumWarning": "100kb",
                   "maximumError": "200kb"
                 },
