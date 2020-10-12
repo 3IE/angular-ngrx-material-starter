@@ -27,7 +27,8 @@
     "new-pipe": "node scripts/new-pipe.js",
     "new-service": "node scripts/new-service.js",
     "new-component": "node scripts/new-component.js",
-    "new-model": "node scripts/new-model.js"
+    "new-model": "node scripts/new-model.js",
+    "init-project": "node scripts/init-project.js"
   },
   "husky": {
     "hooks": {
@@ -70,6 +71,7 @@
     "@ngx-translate/http-loader": "^6.0.0",
     "bootstrap": "^4.5.0",
     "browser-detect": "^0.2.28",
+    "replace-in-file": "^6.1.0",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
     "uuid": "^8.3.0",
