@@ -35,12 +35,19 @@ npm start
 
 ## Useful Commands
 
+- `npm run init-project` - rename the project and remove starters files (`CODE_OF_CONDUCT.md`, `CONTRIBUTING.md`, `BUILT_WITH.md`, etc.)
 - `npm start` - starts a dev server and opens browser with running app
 - `npm run start:prod` - runs full prod build and serves prod bundle
 - `npm run test` - runs lint and tests
 - `npm run watch` - runs tests in watch mode
 - `npm run prettier` - runs prettier to format whole code base (`.ts` and `.scss`)
 - `npm run analyze` - runs full prod build and `webpack-bundle-analyzer` to visualize how much code is shipped (dependencies & application)
+- `npm run new-da` - creates a new data-access
+- `npm run new-page` - creates a new page
+- `npm run new-pipe` - creates a new pipe
+- `npm run new-service` - creates a new service
+- `npm run new-component` - creates a new component
+- `npm run new-model` - creates a new model
 
 ![analzye](https://raw.githubusercontent.com/tomastrajan/angular-ngrx-material-starter/master/meta-assets/analyze.png)
 

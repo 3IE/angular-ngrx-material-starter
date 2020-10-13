@@ -24,7 +24,8 @@ function handleAnswer(answer) {
 
     if (!formattedName.endsWith('front')) {
         rl.question(`Your project\'s name does not end with \'front\', do you want to rename it \'${formattedName}-front\' ? (y/n)`, (frontAnswer) => {
-            if (frontAnswer === 'y') {
+            frontAnswer = frontAnswer.trim().toLowerCase();
+            if (frontAnswer === 'y' || frontAnswer === 'yes') {
                 formattedName += '-front';
             } else {
                 console.log('Skip');
