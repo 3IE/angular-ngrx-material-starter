@@ -112,8 +112,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     StoreRouterConnectingModule.forRoot(),
     EffectsModule.forRoot([
       AuthEffects,
-      SettingsEffects,
-//      GoogleAnalyticsEffects
+      SettingsEffects
+      // GoogleAnalyticsEffects
     ]),
     environment.production
       ? []
