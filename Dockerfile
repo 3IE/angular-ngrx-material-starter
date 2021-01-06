@@ -11,7 +11,7 @@
 
 # Stage 1, based on Node.js, to build and compile Angular
 
-FROM node:12.16.3-alpine as builder
+FROM node:12.20.1-alpine3.10 as builder
 
 COPY package.json ./
 

@@ -7,7 +7,7 @@ env:
     # REGISTRY_PASS
     #- secure: "SECRET"
 node_js:
-  - node
+  - 14
 sudo: false
 dist: trusty
 addons:

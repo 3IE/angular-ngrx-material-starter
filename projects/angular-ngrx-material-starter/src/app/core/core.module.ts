@@ -88,7 +88,7 @@ export {
   selectSettingsStickyHeader
 };
 
-export function HttpLoaderFactory(http: HttpClient) {
+export function httpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(
     http,
     `${environment.i18nPrefix}/assets/i18n/`,
@@ -126,7 +126,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
-        useFactory: HttpLoaderFactory,
+        useFactory: httpLoaderFactory,
         deps: [HttpClient]
       }
     })
