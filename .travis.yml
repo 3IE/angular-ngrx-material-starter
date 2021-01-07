@@ -36,7 +36,7 @@ script:
   - npm run ci
   - docker build -f Dockerfile -t angular_ngrx_material_starter .
 #before_deploy:
-#  - echo "$REGISTRY_PASS" | docker login -u "$REGISTRY_USER" --password-stdin 3ieregistry.azurecr.io  
+#  - docker login -u "$DO_TOKEN" -p "$DO_TOKEN" registry.digitalocean.com
 #deploy:
 #  provider: script
 #  script: bash deploy_to_repo.sh
